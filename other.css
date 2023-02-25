@@ -1,0 +1,67 @@
+/*
+* @name: 文字样式扩展
+* @author: HelloOSMe
+* @version: 1.0
+*/
+.mobile-show{
+display:none;
+}
+@media screen and (max-width: 600px) {
+    .mobile-show{
+        display:block;
+    }
+    .desktop-show{
+        display:none;
+    }
+}
+
+  /*黑幕*/
+.heimu{
+    color: transparent;
+    display:inline-block;
+    background: var(--text-color);
+    transition:all 100ms linear 0s;
+    padding:0px;
+    margin:0px;
+}
+.heimu:hover{
+    background: none;
+    color: var(--text-color);
+    transition:all 100ms linear 0s;
+}
+.heimu p{
+    display:inline-block;
+    padding:0px;
+    margin:0px;
+}
+
+/*模糊文字*/
+.blur{
+    text-shadow: var(--text-color) 0 0 5px;
+    color:transparent;
+    display:inline-block;
+}
+/*模糊幕*/
+.hblur{
+    text-shadow: var(--text-color) 0 0 5px;
+    color:transparent;
+    transition:all 100ms linear 0s;
+    display:inline-block;
+}
+.hblur:hover{
+    text-shadow:none;
+    color: var(--text-color);
+    transition:all 100ms linear 0s;
+}
+.hblur p{
+    display:inline-block;
+    padding:0px;
+    margin:0px;
+}
+/*颜色*/
+.colorful{
+background:linear-gradient(to right, red 0% , orange 20% , yellow 40% , green 60%, blue 80%, purple 100%);
+-webkit-background-clip: text;
+color: transparent;
+display:inline-block;
+}

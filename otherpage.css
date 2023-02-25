@@ -1,0 +1,88 @@
+:root{
+--text-color:#444;
+}
+ html{cursor:url('https://helloosdisk.wdfiles.com/local--files/file:cursor/arrow-sm.png'),auto;}
+ @media (max-width: 1120px){
+
+  body:before {
+  content: "";
+  background: url('https://cdn.luogu.com.cn/upload/image_hosting/bxq0pdud.png') no-repeat;
+  background-size: cover contain;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  }
+  }
+   body {
+    background-image: url('https://cdn.luogu.com.cn/upload/image_hosting/bxq0pdud.png') ;
+    /*洛谷图床-win11背景-开花*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    color: var(--text-color);
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "PingFang SC","Microsoft Yahei","等线","华文细黑",serif;
+    font-size: 87.5%;
+    display:flex;
+  }
+#box{
+    box-shadow: 0.5px 0.5px 5px #888888;
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 1em;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);/*safari*/
+    background-color: rgba(255, 255, 255, 0.7);
+    margin:auto;
+}
+  a {
+    color: #3498db;
+    text-decoration: none;
+    cursor:url('https://helloosdisk.wdfiles.com/local--files/file%3Acursor/link.png'),auto;
+    transition:all 0.2s;
+  }
+  a:hover, a:active {
+    color: #0056b3;
+    transition:all 0.2s;
+  }
+  ::selection{
+      background: #ff000060;
+  }
+  ::-moz-selection{
+      background:#ff000060;
+  }
+.logo{
+width:70px;
+height:70px;
+border-radius: 100%;
+}
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track{
+    background:none;
+}
+::-webkit-scrollbar-thumb{
+    background:#777;
+    border-radius:5px;
+}
+::-webkit-scrollbar-thumb:active{
+    background:#555;
+}
+::-webkit-scrollbar-corner{
+    background: none;
+}
+::-webkit-scrollbar-button{
+    background:#777;
+    width:8px;
+    height:8px;
+    border-radius:100%;
+}
+::-webkit-scrollbar-button:active{
+    background:#555;
+}
