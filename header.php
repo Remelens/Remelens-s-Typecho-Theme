@@ -157,7 +157,7 @@ function autodo(){
     </a>
     <a class="change-theme" onclick="changetheme();" style="left:0;display:none;">
 <!--暂时禁用，有bug-->
-<img class="themeimg" style="width:30px;margin:2px 3px 2px 3px;" src="/usr/themes/default/img/ms.png" alt="" />
+<img class="themeimg" style="width:30px;margin:2px 3px 2px 3px;" src="/usr/themes/OSMe/img/ms.png" alt="" />
     </a>
 </header><!-- end #header -->
 <div id="body">
