@@ -4,7 +4,7 @@
  *
  * @package HelloOSMe's Personal Theme
  * @author HelloOSMe
- * @version 0.1
+ * @version 0.2
  * @link http://helloos.eu.org
  */
 

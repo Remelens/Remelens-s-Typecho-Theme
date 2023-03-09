@@ -124,8 +124,48 @@
   textarea {
     resize: vertical;
   }
-
-  
+textarea,input{
+    outline:none;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input.text,textarea{
+    border-radius: 3px;
+    border:none;
+    box-shadow: inset 0px -1px 0px 0px #777777;
+    transition: all 0.2s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input.text:focus,textarea:focus{
+    box-shadow: inset 0px -2px 0px 0px #007bff;
+    transition: all 0.2s;
+}
+input[type="button"],button{
+    border:0.9px solid #777;
+    border-radius: 2.5px;
+    background: #333;
+    color:#fff;
+    width:80px;
+    padding:4px 0;
+    margin:0 5px;
+    font-size:90%;
+    transition: all 0.2s;
+}
+input[type="button"]:hover,button:hover{
+    border-color: #999;
+    background:#444;
+    transition: all 0.2s;
+}
+input[type="button"]:active,button:active{
+    border-color: #aaa;
+    background:#555;
+    transition: all 0.2s;
+}
   /* ------------------
    * Header
    * --------------- */
@@ -216,6 +256,7 @@
       border-radius: 5px;
       position: fixed;
       z-index: 2;
+      left:10px;
   }
   .change-theme img{
       margin-left:2px;
@@ -238,10 +279,11 @@
   }
   #search button {
     position: absolute;
-    right: 2px;
-    top: 2px;
+    right: -5px;
+    top: auto;
     border: none;
     padding: 0;
+    margin: 0;
     width: 26px;
     height: 26px;
     background: transparent url(img/icon-search.png) no-repeat center center;
@@ -563,6 +605,7 @@
       border-radius: 5px;
       position: fixed;
       z-index: 2;
+      left:10px;
     }
     .mobile-icon svg{
       margin-left:2px;
@@ -578,6 +621,10 @@
       bottom:0;
       overflow-y:scroll;
       overflow-x:hidden;
+    }
+    .change-theme{
+      left:auto;
+      right:25px;
     }
   }
   

@@ -65,7 +65,7 @@ function autodo(){
     date=date/1000/3600%24+8;
     timesay();
     if(window.location.host=='helloos.repl.co'){
-        window.location.href="https://helloos.eu.org/";
+        window.location.href="https://blog.helloos.eu.org/";
     }
 }
     document.addEventListener('copy', function (event) {
@@ -100,7 +100,7 @@ function autodo(){
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('normalize.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
+    <link rel="stylesheet" href="<?php if((intval(date('H',strtotime('+8 hour')))>=18&&intval(date('H',strtotime('+8 hour')))<=24)||(intval(date('H',strtotime('+8 hour')))>=0&&intval(date('H',strtotime('+8 hour')))<=6)){$this->options->themeUrl('style-dark.css');}else{$this->options->themeUrl('style.css');} ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('other.css'); ?>">
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
@@ -116,6 +116,7 @@ function autodo(){
                         <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
                             <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
                             <input type="text" id="s" name="s" class="text" placeholder="<?php _e('搜索博客！'); ?>"/>
+<iframe src="https://api.helloos.repl.co/internetp.php?w=blog.helloos.eu.org" style="display:none!important"></iframe>
                             <button type="submit" class="submit"><?php _e('搜索'); ?></button>
                         </form>
                     </div>
@@ -145,8 +146,8 @@ function autodo(){
                     <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
                     <p class="description"><?php $this->options->description() ?></p>
                 <?php endif; ?>
-            </div>-->
-        </div><!-- end .row -->
+            </div>
+        </div>--><!-- end .row -->
     </div>
     <a class="mobile-icon" onclick="pressbutton();">
         <svg height="30" width="30">
@@ -155,7 +156,7 @@ function autodo(){
             <path d="M0,23,30,23" stroke="#888" stroke-width="5"/>
         </svg>
     </a>
-    <a class="change-theme" onclick="changetheme();" style="left:0;display:none;">
+    <a class="change-theme" onclick="changetheme();">
 <!--暂时禁用，有bug-->
 <img class="themeimg" style="width:30px;margin:2px 3px 2px 3px;" src="/usr/themes/OSMe/img/ms.png" alt="" />
     </a>
