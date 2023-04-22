@@ -3,6 +3,6 @@ My personal theme
 
 ![Screenshot](https://blog.helloos.eu.org/usr/themes/OSMe/screenshot.png)
 
-Website: https://hlloos.eu.org
+Website: https://blog.helloos.eu.org
 
 Edited from [Typecho default theme](https://github.com/typecho/typecho).
